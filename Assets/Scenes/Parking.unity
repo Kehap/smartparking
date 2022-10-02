@@ -649,6 +649,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1701645119}
+  - {fileID: 540462988}
   m_Father: {fileID: 1634122042}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1908,20 +1909,20 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 540462987}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1098914134}
   - {fileID: 1312155669}
   - {fileID: 1647981686}
-  m_Father: {fileID: 1701645119}
+  m_Father: {fileID: 170996393}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 275.49203, y: 0.000011444}
+  m_AnchoredPosition: {x: 275.49203, y: 552.888}
   m_SizeDelta: {x: 145.6395, y: 121.7873}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &540462989
@@ -1937,7 +1938,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: -1
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -1967,7 +1968,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 540462990}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1634122043}
+        m_TargetAssemblyTypeName: menuMovement, Assembly-CSharp
+        m_MethodName: MovePanel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &540462990
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2016,7 +2029,7 @@ GameObject:
   m_Component:
   - component: {fileID: 576319126}
   m_Layer: 0
-  m_Name: Menu_original_pos
+  m_Name: Menu_original_Pos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2039,7 +2052,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 282.61, y: -612.12}
+  m_AnchoredPosition: {x: 282.73, y: -611.12}
   m_SizeDelta: {x: 565.4608, y: 1222.24}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &609455920
@@ -6217,7 +6230,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MenuOrigPos: {fileID: 576319125}
   MenuActivePos: {fileID: 463111045}
-  MenuPanel: {fileID: 0}
+  MenuPanel: {fileID: 1200905917}
+  Move_Menu_Panel: 0
+  Move_Menu_Panel_Back: 0
 --- !u!1 &1647981685
 GameObject:
   m_ObjectHideFlags: 0
@@ -6461,7 +6476,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2009013550}
-  - {fileID: 540462988}
   m_Father: {fileID: 170996393}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7039,7 +7053,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1827433160}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1634122043}
+        m_TargetAssemblyTypeName: menuMovement, Assembly-CSharp
+        m_MethodName: MovePanelBack
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1827433160
 MonoBehaviour:
   m_ObjectHideFlags: 0
