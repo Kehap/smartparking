@@ -11,6 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Parking.unity
     guid: 3fc8acdd13e6c734bafef6554d6fdbcd
+  - enabled: 1
+    path: Assets/Scenes/SampleScene-ChakarPNyingpo.unity
+    guid: b1934c0a1034dfd478ff3a9cd38174c6
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
